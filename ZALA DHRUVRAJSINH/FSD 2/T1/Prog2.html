@@ -1,0 +1,19 @@
+<!-- write a json object which contains array of 3 object each object contains 2 properties name and age
+ Sort an array value by age in decending order print name and age in terminal as per sorted array -->
+ <html>
+    <script>
+        var obj={"Details":[{"Name":"A","Age":20},{"Name":"B","Age":10},{"Name":"C","Age":90}]}
+        for (let i = 0; i < obj.Details.length; i++) {
+            for (let j = 0; j < obj.Details.length - i - 1; j++) {
+                if (obj.Details[j].Age < obj.Details[j + 1].Age) {
+                    let temp = obj.Details[j];
+                    obj.Details[j] = obj.Details[j + 1];
+                    obj.Details[j + 1] = temp;
+                }
+            }
+        }
+        for (let i = 0; i < obj.Details.length; i++) {
+            console.log("Name: " + obj.Details[i].Name + ", Age: " + obj.Details[i].Age);
+        }
+    </script>
+ </html>
