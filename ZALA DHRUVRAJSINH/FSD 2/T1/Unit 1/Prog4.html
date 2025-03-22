@@ -1,0 +1,17 @@
+<!-- Write a function named firstandlast() that take an array as input and return an object with below condition:
+ 1.) The first element of an array must be an object's key
+ 2.) The last element of an array must be a key's value
+ eg:- input=['abc','efg','hij'] output={abc:'jkl'}-->
+ <html>
+    <script>
+        function firstandlast(arr){
+            var key=arr[0]
+            var val=arr[arr.length-1]
+            var obj={}
+            obj[key]=val; //if we dont define the variabels key and val then obj[arr[0]]=arr[arr.length-1]
+            return obj
+        }
+        var array=['abc','efg','hij'];
+        console.log(firstandlast(array))
+    </script>
+ </html>

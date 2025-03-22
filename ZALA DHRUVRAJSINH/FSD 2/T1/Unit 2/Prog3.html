@@ -1,0 +1,10 @@
+<!-- write a script that display hello world with increasing font size at interval of 10ms in blue color when font size reaches to 50px it should stop -->
+ <html>
+    <script>
+        var pixle=5
+        setInterval(function(){x=document.getElementById("hi");x.style.color="blue";x.style.fontSize=pixle+"px";if(pixle<50){pixle+=1}},10)
+    </script>
+    <body>
+        <p id="hi">Hello World</p>
+    </body>
+ </html>

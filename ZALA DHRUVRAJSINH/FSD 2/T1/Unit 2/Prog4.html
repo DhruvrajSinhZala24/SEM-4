@@ -1,0 +1,37 @@
+<html>
+  <script>
+    var size = 1;
+    var intervalId;
+    function increase() {
+      clearInterval(intervalId); 
+      intervalId = setInterval(function() {
+        var x = document.getElementById("hii");
+        x.style.color = "blue";
+        x.style.fontSize = size + "px";
+        if (size < 100000) {
+          size += 1;
+        }
+      }, 10);
+    }
+    function decrease() {
+      clearInterval(intervalId); 
+      intervalId = setInterval(function() {
+        var x = document.getElementById("hii");
+        x.style.color = "blue";
+        x.style.fontSize = size + "px";
+        if (size > 10) {
+          size -= 1;
+        }
+      }, 10);
+    }
+    function stop() {
+      clearInterval(intervalId); 
+    }
+  </script>
+  <body>
+    <button onclick="increase()">Increment</button>
+    <button onclick="decrease()">Decrement</button>
+    <button onclick="stop()">Stop</button>
+    <p id="hii">Hello</p>
+  </body>
+</html>

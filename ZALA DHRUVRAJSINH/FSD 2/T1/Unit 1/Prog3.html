@@ -1,0 +1,19 @@
+<!-- write a script to define 2 json object named as div1 and div2 having an array to store name of students this name should
+ be sorted alphabetically and should be displayed in console -->
+ <html>
+    <script>
+        var div1={"name":["Dhruvraj",'Parth','Vedant','Smit','Satyam','Jayesh']}
+        var div2={"name":["Manthan",'Paresh','Veer','Kunj','Neel','Om']}
+        var arr=div1.name.concat(div2.name) // we can use div1.name.concat(div2.name).sort()
+        for (var i = 0; i < arr.length - 1; i++) {
+            for (var j = 0; j < arr.length - 1 - i; j++) {
+              if (arr[j] > arr[j + 1]) {
+                var temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+                }
+            }
+        }
+        console.log(arr)
+    </script>
+ </html>

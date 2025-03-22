@@ -1,0 +1,13 @@
+<!-- write a js code having array of object having weight and height and print the heighest height-->
+ <html>
+    <script>
+        var obj={"Details":[{"Weight":50,"Height":20},{"Weight":80,"Height":10},{"Weight":100,"Height":90}]}
+        var max=0
+        for(let i=0;i<obj.Details.length;i++){
+            if(obj.Details[i].Height>max){
+                max=obj.Details[i].Height
+            }
+        }
+        console.log(max)
+    </script>
+ </html>

@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <p id="demo"></p>
+    </body>
+    <script>
+        function mydisplay(sum){
+            document.getElementById("demo").innerHTML=sum
+        }
+        function mycals(num1,num2,mycallback){
+            sum=num1+num2
+            mycallback(sum)
+        }
+        mycals(13,15,mydisplay)
+    </script>
+</html>
