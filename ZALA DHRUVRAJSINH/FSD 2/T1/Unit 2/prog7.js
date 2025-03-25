@@ -1,0 +1,2 @@
+// Write a node js script to create a folder 'aaa' in temp folder also create file temp.txt inside "aaa" folder .
+// now check if available physcial memory is >1gb the sufficent memory in the file else write insufficient memory in file 
