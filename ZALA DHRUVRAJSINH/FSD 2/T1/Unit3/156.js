@@ -23,3 +23,5 @@ http.createServer(function (req, res) {
         res.end(); 
     }
 }).listen(5000); 
+
+// also reffer the notes solution
