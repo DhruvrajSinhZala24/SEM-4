@@ -1,0 +1,13 @@
+html
+head
+    title Login Form
+body
+    h1 Login
+    form(action="/login" method="post")
+        label Username:
+        input(type="text" id="username" name="username" required)
+        br
+        label Password:     
+        input(type="password" id="password" name="password" required)
+        br
+        input(type="submit" value="Login")
